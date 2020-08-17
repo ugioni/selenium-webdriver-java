@@ -2,8 +2,6 @@ package automacao.passos;
 
 import automacao.core.Core;
 import automacao.paginas.Produtos;
-import cucumber.api.Scenario;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.support.PageFactory;
 
@@ -14,11 +12,6 @@ public class PassosProdutos extends Core {
     public PassosProdutos() {
         paginaProdutos = new Produtos();
         PageFactory.initElements(driver, this.paginaProdutos);
-    }
-
-    @Before(value = "@Produto")
-    public void before(Scenario cenario) {
-        setCenario(cenario);
     }
 
     @Then("^deve ser exibido um resultado encontrado para a pesquisa$")

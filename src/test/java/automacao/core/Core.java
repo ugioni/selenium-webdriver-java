@@ -156,6 +156,7 @@ public class Core {
     public void clicar(By by) {
         aguardarElementoCarregar(by);
         getElemento(by).click();
+        aguardarThreadSleep(1);
     }
 
     public void atualizarPagina() {
@@ -164,6 +165,7 @@ public class Core {
 
     public void acessarPagina(String url) {
         driver.get(url);
+        aguardarThreadSleep(1);
     }
 
     public String getUrlAtual() {

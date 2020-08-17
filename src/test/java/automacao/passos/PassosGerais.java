@@ -10,12 +10,10 @@ public class PassosGerais extends Core {
     @Before(order = 0)
     public void before(Scenario cenario) {
         setCenario(cenario);
-        aguardarThreadSleep(1);
     }
 
     @After()
     public void after() {
         gerarEvidencia();
-        aguardarThreadSleep(1);
     }
 }
