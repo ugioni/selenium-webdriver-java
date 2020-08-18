@@ -12,3 +12,11 @@ Projeto de automação de testes web na linguagem <b>Java</b> com <b>Maven</b> u
 Para outras versões do Chrome trocar o .exe na pasta drivers do projeto.
 
 ###### ChromeDriver Download: http://chromedriver.chromium.org/downloads
+
+### Executando os testes
+
+Para baixar as dependências e rodar os testes pela primeira vez, executar o comando <b>maven clean install</b>
+
+### Relatório de execução
+
+O relatório do <b>Cucumber</b> de execução dos testes, está localizado em <b>target/cucumber-html-report/index.html</b> 
