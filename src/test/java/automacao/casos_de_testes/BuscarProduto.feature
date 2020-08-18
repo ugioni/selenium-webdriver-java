@@ -1,7 +1,7 @@
 @AutomationPractice @Produto @BuscarProduto
 Feature: Buscar Produto
 
-  Scenario Outline: Busca um produto na loja
+  Scenario Outline: Busca um produto válido na loja
 
     Given o usuário acessou a home da loja
     And digitar a descrição do produto "<descProduto>" na barra de pesquisa
@@ -12,3 +12,4 @@ Feature: Buscar Produto
     Examples:
       | descProduto | produto                     |
       | t-shirts    | Faded Short Sleeve T-shirts |
+      | blous       | Blouse                      |
