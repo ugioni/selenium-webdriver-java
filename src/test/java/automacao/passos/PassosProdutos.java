@@ -2,7 +2,7 @@ package automacao.passos;
 
 import automacao.core.Core;
 import automacao.paginas.Produtos;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.support.PageFactory;
 
 public class PassosProdutos extends Core {

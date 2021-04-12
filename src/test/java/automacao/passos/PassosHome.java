@@ -2,8 +2,8 @@ package automacao.passos;
 
 import automacao.core.Core;
 import automacao.paginas.Home;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.support.PageFactory;
 
 public class PassosHome extends Core {

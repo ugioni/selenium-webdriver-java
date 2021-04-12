@@ -8,7 +8,7 @@
 
     <name>quickstart-minds-testing</name>
     <description>quickstart-minds-testing</description>
-    <inceptionYear>2020</inceptionYear>
+    <inceptionYear>2021</inceptionYear>
 
     <developers>
         <developer>
@@ -21,14 +21,14 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <junit.version>4.13</junit.version>
+        <junit.version>4.13.2</junit.version>
         <selenium.version>3.141.59</selenium.version>
-        <cucumber-core.version>1.2.6</cucumber-core.version>
-        <cucumber-html.version>0.2.6</cucumber-html.version>
-        <cucumber-java.version>1.2.6</cucumber-java.version>
-        <cucumber-junit.version>1.2.6</cucumber-junit.version>
-        <cucumber-jvm-deps.version>1.0.5</cucumber-jvm-deps.version>
-        <cucumber-picocontainer.version>1.2.6</cucumber-picocontainer.version>
+        <cucumber-core.version>6.10.2</cucumber-core.version>
+        <cucumber-html.version>0.2.7</cucumber-html.version>
+        <cucumber-java.version>6.10.2</cucumber-java.version>
+        <cucumber-junit.version>6.10.2</cucumber-junit.version>
+        <cucumber-jvm-deps.version>1.0.6</cucumber-jvm-deps.version>
+        <cucumber-picocontainer.version>6.10.2</cucumber-picocontainer.version>
         <gherkin.version>2.12.2</gherkin.version>
         <gherkin-jvm-deps.version>1.0.3</gherkin-jvm-deps.version>
     </properties>
@@ -55,7 +55,7 @@
             <version>${cucumber-core.version}</version>
         </dependency>
         <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-html</artifactId>
             <version>${cucumber-html.version}</version>
         </dependency>
@@ -70,7 +70,7 @@
             <version>${cucumber-junit.version}</version>
         </dependency>
         <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-jvm-deps</artifactId>
             <version>${cucumber-jvm-deps.version}</version>
         </dependency>

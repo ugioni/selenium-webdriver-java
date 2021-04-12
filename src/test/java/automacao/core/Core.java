@@ -1,6 +1,6 @@
 package automacao.core;
 
-import cucumber.api.Scenario;
+import io.cucumber.java.Scenario;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -44,9 +44,12 @@ public class Core {
                 capabilities.setJavascriptEnabled(true);
                 ChromeOptions options = new ChromeOptions();
                 options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-                options.setExperimentalOption("useAutomationExtension", false);
                 capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-                System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+                if (System.getProperty("os.name").contains("win")) {
+                    System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+                } else {
+                    System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+                }
                 driver = new ChromeDriver(capabilities);
             }
         }
@@ -198,9 +201,9 @@ public class Core {
     }
 
     public void gerarImagemCenario(Scenario cenarioEvidencia, WebDriver driver) {
-        cenario.write("Imagem da tela");
+        cenario.log("Imagem da tela");
         byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-        cenarioEvidencia.embed(screenshot, "image/png");
+        cenarioEvidencia.attach(screenshot, "image/png", "Imagem da tela");
     }
 
     public void gerarEvidencia() {
