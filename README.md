@@ -19,4 +19,6 @@ Para baixar as dependências e rodar os testes pela primeira vez, executar o com
 
 ### Relatório de execução
 
-O relatório do <b>Cucumber</b> de execução dos testes, está localizado em <b>target/cucumber-html-report/index.html</b> 
+O relatório local do <b>Cucumber</b> de execução dos testes, está localizado em <b>target/cucumber-html-report/index.html</b>
+
+O link do relatório na nuvem do <b>cucumber.io</b> de execução dos testes, está localizado no console ao final da execução do testes e fica disponível para acesso por 24 horas

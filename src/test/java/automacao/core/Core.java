@@ -45,7 +45,7 @@ public class Core {
                 ChromeOptions options = new ChromeOptions();
                 options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
                 capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-                if (System.getProperty("os.name").contains("win")) {
+                if (System.getProperty("os.name").contains("Win")) {
                     System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
                 } else {
                     System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
@@ -201,7 +201,6 @@ public class Core {
     }
 
     public void gerarImagemCenario(Scenario cenarioEvidencia, WebDriver driver) {
-        cenario.log("Imagem da tela");
         byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
         cenarioEvidencia.attach(screenshot, "image/png", "Imagem da tela");
     }
