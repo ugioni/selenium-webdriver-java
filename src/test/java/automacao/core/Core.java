@@ -47,6 +47,8 @@ public class Core {
                 capabilities.setCapability(ChromeOptions.CAPABILITY, options);
                 if (System.getProperty("os.name").contains("Win")) {
                     System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+                } else if (System.getProperty("os.name").contains("Mac")) {
+                    System.setProperty("webdriver.chrome.driver", "drivers/chromedriver_mac");
                 } else {
                     System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
                 }
