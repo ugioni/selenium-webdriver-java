@@ -40,23 +40,23 @@
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:jetty-repacked:9.4.12.v20180830" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.19" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-core:6.10.2" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-gherkin:6.10.2" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-gherkin-messages:6.10.2" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:messages:14.0.1" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:tag-expressions:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-core:6.10.4" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-gherkin:6.10.4" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-gherkin-messages:6.10.4" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:messages:15.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:tag-expressions:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:cucumber-expressions:10.3.0" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:datatable:3.5.0" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-plugin:6.10.2" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:docstring:6.10.2" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:html-formatter:12.0.0" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:create-meta:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-plugin:6.10.4" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:docstring:6.10.4" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:html-formatter:13.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:create-meta:4.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apiguardian:apiguardian-api:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:cucumber-html:0.2.7" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-java:6.10.2" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-junit:6.10.2" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-java:6.10.4" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-junit:6.10.4" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:cucumber-jvm-deps:1.0.6" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-picocontainer:6.10.2" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-picocontainer:6.10.4" level="project" />
     <orderEntry type="library" name="Maven: org.picocontainer:picocontainer:2.15" level="project" />
     <orderEntry type="library" name="Maven: info.cukes:gherkin:2.12.2" level="project" />
     <orderEntry type="library" name="Maven: info.cukes:gherkin-jvm-deps:1.0.3" level="project" />
