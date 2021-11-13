@@ -22,7 +22,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <junit.version>4.13.2</junit.version>
-        <selenium.version>3.141.59</selenium.version>
+        <selenium.version>4.0.0</selenium.version>
+        <selenium.server.version>4.0.0-alpha-2</selenium.server.version>
         <cucumber-core.version>7.0.0</cucumber-core.version>
         <cucumber-html.version>0.2.7</cucumber-html.version>
         <cucumber-java.version>7.0.0</cucumber-java.version>
@@ -47,7 +48,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-server</artifactId>
-            <version>${selenium.version}</version>
+            <version>${selenium.server.version}</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>

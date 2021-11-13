@@ -40,7 +40,7 @@ public class Core {
     private static WebDriver getDriver(String browser) throws Exception {
         if (driver == null) {
             if (browser.equals("chrome")) {
-                DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+                DesiredCapabilities capabilities = new DesiredCapabilities();
                 capabilities.setJavascriptEnabled(true);
                 ChromeOptions options = new ChromeOptions();
                 options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
