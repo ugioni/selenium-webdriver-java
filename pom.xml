@@ -23,12 +23,12 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <junit.version>4.13.2</junit.version>
         <selenium.version>3.141.59</selenium.version>
-        <cucumber-core.version>6.10.4</cucumber-core.version>
+        <cucumber-core.version>7.0.0</cucumber-core.version>
         <cucumber-html.version>0.2.7</cucumber-html.version>
-        <cucumber-java.version>6.10.4</cucumber-java.version>
-        <cucumber-junit.version>6.10.4</cucumber-junit.version>
+        <cucumber-java.version>7.0.0</cucumber-java.version>
+        <cucumber-junit.version>7.0.0</cucumber-junit.version>
         <cucumber-jvm-deps.version>1.0.6</cucumber-jvm-deps.version>
-        <cucumber-picocontainer.version>6.10.4</cucumber-picocontainer.version>
+        <cucumber-picocontainer.version>7.0.0</cucumber-picocontainer.version>
         <gherkin.version>2.12.2</gherkin.version>
         <gherkin-jvm-deps.version>1.0.3</gherkin-jvm-deps.version>
     </properties>
