@@ -3,11 +3,11 @@ Projeto de automação de testes web na linguagem <b>Java</b> com <b>Maven</b> u
 
 - Junit 4.13.2
 
-- Cucumber 7.2.3
+- Cucumber 7.3.4
 
-- Selenium WebDriver 4.1.2
+- Selenium WebDriver 4.2.0
 
-###### Projeto rodando no ChromeDriver 98.0.4758.80
+###### Projeto rodando no ChromeDriver 102.0.5005.61
 
 Para outras versões do Chrome trocar o .exe na pasta drivers do projeto.
 

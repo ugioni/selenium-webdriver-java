@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Collections;
 import java.util.List;
 import java.util.Properties;
@@ -30,7 +31,7 @@ public class Core {
         driver = null;
         try {
             driver = getDriver(getProperties("browser"));
-            wait = new WebDriverWait(driver, 30);
+            wait = new WebDriverWait(driver, Duration.ofSeconds(30L));
             jsExec = (JavascriptExecutor) driver;
         } catch (Exception e) {
             System.out.println("Não foi possível iniciar o driver " + e.getMessage());
