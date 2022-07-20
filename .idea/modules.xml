@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/quickstart-minds-testing.iml" filepath="$PROJECT_DIR$/.idea/quickstart-minds-testing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/selenium-webdriver-java.iml" filepath="$PROJECT_DIR$/.idea/selenium-webdriver-java.iml" />
     </modules>
   </component>
 </project>

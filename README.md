@@ -1,4 +1,4 @@
-## quickstart-minds-testing - Grupo no Telegram: https://t.me/mindstesting
+## selenium-webdriver-java
 Projeto de automação de testes web na linguagem <b>Java</b> com <b>Maven</b> usando:
 
 - Junit 4.13.2
