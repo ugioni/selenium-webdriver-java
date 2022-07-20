@@ -2,19 +2,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.quickstart-minds-testing</groupId>
-    <artifactId>quickstart-minds-testing</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <groupId>com.ugioni</groupId>
+    <artifactId>selenium-webdriver-java</artifactId>
+    <version>1.0.0</version>
 
-    <name>quickstart-minds-testing</name>
-    <description>quickstart-minds-testing</description>
-    <inceptionYear>2021</inceptionYear>
+    <name>selenium-webdriver-java</name>
+    <description>E2E automation using selenium webdriver</description>
+    <inceptionYear>2022</inceptionYear>
 
     <developers>
         <developer>
             <name>Leandro Ugioni</name>
             <email>leandro_ugioni@hotmail.com</email>
-            <organization>minds-testing</organization>
+            <organization>ugioni</organization>
         </developer>
     </developers>
 
@@ -22,14 +22,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <junit.version>4.13.2</junit.version>
-        <selenium.version>4.2.0</selenium.version>
+        <selenium.version>4.3.0</selenium.version>
         <selenium.server.version>4.0.0-alpha-2</selenium.server.version>
-        <cucumber-core.version>7.3.4</cucumber-core.version>
+        <cucumber-core.version>7.4.1</cucumber-core.version>
         <cucumber-html.version>0.2.7</cucumber-html.version>
-        <cucumber-java.version>7.3.4</cucumber-java.version>
-        <cucumber-junit.version>7.3.4</cucumber-junit.version>
+        <cucumber-java.version>7.4.1</cucumber-java.version>
+        <cucumber-junit.version>7.4.1</cucumber-junit.version>
         <cucumber-jvm-deps.version>1.0.6</cucumber-jvm-deps.version>
-        <cucumber-picocontainer.version>7.3.4</cucumber-picocontainer.version>
+        <cucumber-picocontainer.version>7.4.1</cucumber-picocontainer.version>
         <gherkin.version>2.12.2</gherkin.version>
         <gherkin-jvm-deps.version>1.0.3</gherkin-jvm-deps.version>
     </properties>
@@ -98,7 +98,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>exec-maven-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.1.0</version>
                     <executions>
                         <execution>
                             <phase>integration-test</phase>
@@ -129,7 +129,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0-M6</version>
+                    <version>3.0.0-M7</version>
                     <configuration>
                         <includes>
                             <include>**/Run.java</include>
@@ -159,7 +159,7 @@
                 <plugin>
                     <groupId>net.masterthought</groupId>
                     <artifactId>maven-cucumber-reporting</artifactId>
-                    <version>5.7.0</version>
+                    <version>5.7.1</version>
                     <executions>
                         <execution>
                             <id>execution</id>

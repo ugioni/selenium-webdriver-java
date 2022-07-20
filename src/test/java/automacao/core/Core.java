@@ -5,7 +5,6 @@ import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -41,11 +40,8 @@ public class Core {
     private static WebDriver getDriver(String browser) throws Exception {
         if (driver == null) {
             if (browser.equals("chrome")) {
-                DesiredCapabilities capabilities = new DesiredCapabilities();
-                capabilities.setJavascriptEnabled(true);
                 ChromeOptions options = new ChromeOptions();
                 options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-                capabilities.setCapability(ChromeOptions.CAPABILITY, options);
                 if (System.getProperty("os.name").contains("Win")) {
                     System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
                 } else if (System.getProperty("os.name").contains("Mac")) {
@@ -53,7 +49,7 @@ public class Core {
                 } else {
                     System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
                 }
-                driver = new ChromeDriver(capabilities);
+                driver = new ChromeDriver(options);
             }
         }
         driver.manage().window().maximize();
