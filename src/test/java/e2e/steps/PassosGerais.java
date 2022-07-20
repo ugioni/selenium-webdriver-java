@@ -1,6 +1,6 @@
-package automacao.passos;
+package e2e.steps;
 
-import automacao.core.Core;
+import e2e.core.Core;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;

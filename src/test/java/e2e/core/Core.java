@@ -1,4 +1,4 @@
-package automacao.core;
+package e2e.core;
 
 import io.cucumber.java.Scenario;
 import org.junit.Assert;

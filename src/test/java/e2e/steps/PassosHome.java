@@ -1,7 +1,7 @@
-package automacao.passos;
+package e2e.steps;
 
-import automacao.core.Core;
-import automacao.paginas.Home;
+import e2e.core.Core;
+import e2e.pages.Home;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.support.PageFactory;

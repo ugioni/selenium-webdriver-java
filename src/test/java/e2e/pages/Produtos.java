@@ -1,6 +1,6 @@
-package automacao.paginas;
+package e2e.pages;
 
-import automacao.core.Core;
+import e2e.core.Core;
 import org.openqa.selenium.By;
 
 public class Produtos extends Core {
