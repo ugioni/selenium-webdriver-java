@@ -12,4 +12,18 @@ public class Produtos extends Core {
     public By getQuantidadeResultados() {
         return getByCss("span[class='heading-counter']");
     }
+
+    public By getMenuTshirt() {
+        return getByLinkText("T-SHIRTS");
+    }
+
+    public By getImagemProduto() {
+        return getByClassName("product_img_link");
+
+    }
+
+    public By getBotaoAddCarrinho() {
+        return getById("add_to_cart");
+
+    }
 }

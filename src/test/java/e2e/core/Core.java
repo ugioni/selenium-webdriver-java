@@ -6,8 +6,10 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
@@ -218,5 +220,30 @@ public class Core {
 
     public static WebDriver getDriver() {
         return driver;
+    }
+
+    public void irParaFrame(int index) {
+        driver.switchTo().frame(index);
+    }
+
+    public void validarCampoGetTextFrame(By by, String esperado, int index) {
+        irParaFrame(index);
+        validarCampoGetText(by, esperado);
+    }
+
+    public void selecionarSelect(By by, String name, int index) {
+        clicar(by);
+        WebElement selectElement = driver.findElement(By.name(name));
+        Select select = new Select(selectElement);
+        select.selectByIndex(index);
+    }
+
+    public void anexarArquivo(By by, String arquivo) {
+        try {
+            String caminho = new File("arquivos/" + arquivo).getCanonicalPath();
+            driver.findElement(by).sendKeys(caminho);
+        } catch (IOException e) {
+            Assert.fail("Não foi possível anexar o arquivo\nExceção lançada: ".concat(e.getMessage()));
+        }
     }
 }

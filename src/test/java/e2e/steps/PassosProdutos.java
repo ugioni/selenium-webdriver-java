@@ -2,7 +2,9 @@ package e2e.steps;
 
 import e2e.core.Core;
 import e2e.pages.Produtos;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.support.PageFactory;
 
 public class PassosProdutos extends Core {
@@ -22,5 +24,22 @@ public class PassosProdutos extends Core {
     @Then("^deve ser exibido o produto \"([^\"]*)\" encontrado para a pesquisa$")
     public void deve_ser_exibido_o_produto_encontrado_para_a_pesquisa(String produto) {
         validarCampoGetAttribute(paginaProdutos.getCampoNomeProduto(), produto, "title");
+    }
+
+    @Given("clica no menu T-Shirt")
+    public void clica_no_menu_t_shirt() {
+        clicar(paginaProdutos.getMenuTshirt());
+
+    }
+
+    @When("clicar em Quick view do produto")
+    public void clicar_em_quick_view_do_produto() {
+        clicar(paginaProdutos.getImagemProduto());
+
+    }
+
+    @Then("a modal contendo o produto descrito deveria aparecer")
+    public void a_modal_contendo_o_produto_descrito_deveria_aparecer() {
+        validarCampoGetTextFrame(paginaProdutos.getBotaoAddCarrinho(), "Add to cart", 0);
     }
 }
