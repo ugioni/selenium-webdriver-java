@@ -10,16 +10,18 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"json", "html:target/cucumber-html-report.html",
         "json:target/cucumber-html-report.json"}, features = "src/", monochrome = true,
-        tags = "@AutomationPractice", publish = true)
+        tags = "@BuscarProduto", publish = true)
 
 public class Run extends Core {
+
+    public static boolean HEADLESS = true;
 
     public Run() {
     }
 
     @BeforeClass
     public static void iniciar() {
-        iniciarDriver();
+        iniciarDriver(HEADLESS);
     }
 
     @AfterClass

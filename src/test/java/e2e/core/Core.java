@@ -28,10 +28,10 @@ public class Core {
     public Core() {
     }
 
-    public static void iniciarDriver() {
+    public static void iniciarDriver(boolean headless) {
         driver = null;
         try {
-            driver = getDriver(getProperties("browser"));
+            driver = getDriver(getProperties("browser"), headless);
             wait = new WebDriverWait(driver, Duration.ofSeconds(30L));
             jsExec = (JavascriptExecutor) driver;
         } catch (Exception e) {
@@ -39,11 +39,14 @@ public class Core {
         }
     }
 
-    private static WebDriver getDriver(String browser) throws Exception {
+    private static WebDriver getDriver(String browser, boolean headless) throws Exception {
         if (driver == null) {
             if (browser.equals("chrome")) {
                 ChromeOptions options = new ChromeOptions();
                 options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+                if (headless) {
+                    options.addArguments("--headless");
+                }
                 if (System.getProperty("os.name").contains("Win")) {
                     System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
                 } else if (System.getProperty("os.name").contains("Mac")) {
