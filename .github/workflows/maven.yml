@@ -9,10 +9,9 @@ on:
     - cron: '0 12 * * *'
 
 jobs:
-  build and test:
-
+  build:
+    name: Build and Tests
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 11
