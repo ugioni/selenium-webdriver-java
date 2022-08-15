@@ -1,4 +1,14 @@
-## selenium-webdriver-java
+# selenium-webdriver-java
+
+## GitHub Actions
+
+[![Java CI with Maven](https://github.com/ugioni/selenium-webdriver-java/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/ugioni/selenium-webdriver-java/actions/workflows/maven.yml)
+
+## SonarCloud
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ugioni_quickstart-minds-testing&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ugioni_quickstart-minds-testing)
+
+## Getting Started
 Projeto de automação de testes web na linguagem <b>Java</b> com <b>Maven</b> usando:
 
 - Junit 4.13.2
@@ -7,9 +17,9 @@ Projeto de automação de testes web na linguagem <b>Java</b> com <b>Maven</b> u
 
 - Selenium WebDriver 4.3.0
 
-###### Projeto rodando no ChromeDriver 102.0.5005.61
+###### Projeto rodando no ChromeDriver
 
-Para outras versões do Chrome trocar o .exe na pasta drivers do projeto.
+Para outras versões do Chrome trocar o driver na pasta drivers do projeto.
 
 ###### ChromeDriver Download: http://chromedriver.chromium.org/downloads
 
