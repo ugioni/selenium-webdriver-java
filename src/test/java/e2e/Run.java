@@ -10,11 +10,11 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"json", "html:target/cucumber-html-report.html",
         "json:target/cucumber-html-report.json"}, features = "src/", monochrome = true,
-        tags = "@BuscarProduto", publish = true)
+        tags = "@Pipeline", publish = true)
 
 public class Run extends Core {
 
-    public static boolean HEADLESS = true;
+    public static boolean HEADLESS = false;
 
     public Run() {
     }

@@ -1,4 +1,4 @@
-@AutomationPractice @Produto @VisualizarTshirt
+@Pipeline @AutomationPractice @Produto @VisualizarTshirt
 Feature: Visualizar Tshirt
 
   Scenario: Visualiza o produto T-shirt

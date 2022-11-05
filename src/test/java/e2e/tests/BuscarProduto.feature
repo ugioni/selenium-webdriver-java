@@ -1,4 +1,4 @@
-@AutomationPractice @Produto @BuscarProduto
+@Pipeline @AutomationPractice @Produto @BuscarProduto
 Feature: Buscar Produto
 
   Scenario Outline: Busca um produto válido na loja
