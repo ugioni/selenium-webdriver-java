@@ -16,4 +16,8 @@ public class Home extends Core {
     public By getBotaoBuscar() {
         return getByCss("button[type='submit']");
     }
+
+    public By getMensagemOffline() {
+        return getByCss("div[class='info-heading']");
+    }
 }

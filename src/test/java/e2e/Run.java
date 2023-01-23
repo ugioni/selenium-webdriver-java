@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
 
 public class Run extends Core {
 
-    public static boolean HEADLESS = false;
+    public static boolean HEADLESS = true;
 
     public Run() {
     }

@@ -1,4 +1,4 @@
-@Pipeline @AutomationPractice @Contato @ContactUs
+@AutomationPractice @Contato @ContactUs
 Feature: Contact Us
 
   Scenario Outline: Preenche e manda o formulario de contato
