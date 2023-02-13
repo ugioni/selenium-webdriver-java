@@ -19,6 +19,9 @@ public class PassosHome extends Core {
     @Given("^o usuário acessou a home da loja$")
     public void o_usuário_acessou_a_home_da_loja() {
         acessarPagina(paginaHome.getUrl());
+        digitarCampo(paginaHome.getCampoLogin(), "standard_user");
+        digitarCampo(paginaHome.getCampoSenha(), "secret_sauce");
+        clicar(paginaHome.getBotaoLogin());
     }
 
     @Given("^digitar a descrição do produto \"([^\"]*)\" na barra de pesquisa$")

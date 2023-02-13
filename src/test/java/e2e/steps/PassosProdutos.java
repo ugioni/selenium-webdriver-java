@@ -29,17 +29,25 @@ public class PassosProdutos extends Core {
     @Given("clica no menu T-Shirt")
     public void clica_no_menu_t_shirt() {
         clicar(paginaProdutos.getMenuTshirt());
+    }
 
+    @When("clica no produto backpack")
+    public void clica_no_produto_backpack() {
+        clicar(paginaProdutos.getProdutoBackpack());
     }
 
     @When("clicar em Quick view do produto")
     public void clicar_em_quick_view_do_produto() {
         clicar(paginaProdutos.getImagemProduto());
-
     }
 
     @Then("a modal contendo o produto descrito deveria aparecer")
     public void a_modal_contendo_o_produto_descrito_deveria_aparecer() {
         validarCampoGetTextFrame(paginaProdutos.getBotaoAddCarrinho(), "Add to cart", 0);
+    }
+
+    @Then("deve ser exibida a descrição completa do produto")
+    public void deve_ser_exibida_a_descricao_completa_do_produto() {
+        validarCampoGetText(paginaProdutos.getCampoDescCompleta(), "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.");
     }
 }

@@ -17,13 +17,19 @@ public class Produtos extends Core {
         return getByLinkText("T-SHIRTS");
     }
 
+    public By getProdutoBackpack() {
+        return getByLinkText("Sauce Labs Backpack");
+    }
+
     public By getImagemProduto() {
         return getByClassName("product_img_link");
-
     }
 
     public By getBotaoAddCarrinho() {
         return getById("add_to_cart");
+    }
 
+    public By getCampoDescCompleta() {
+        return getByCss("div[class='inventory_details_desc large_size']");
     }
 }
