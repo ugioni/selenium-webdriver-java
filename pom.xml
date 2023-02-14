@@ -22,7 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <junit.version>4.13.2</junit.version>
-        <selenium.version>4.7.2</selenium.version>
+        <selenium.version>4.8.0</selenium.version>
         <selenium.server.version>4.0.0-alpha-2</selenium.server.version>
         <cucumber-core.version>7.11.0</cucumber-core.version>
         <cucumber-html.version>0.2.7</cucumber-html.version>
@@ -35,6 +35,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
