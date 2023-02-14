@@ -1,4 +1,4 @@
-@Pipeline @AutomationPractice @Loja @LojaOffline
+@AutomationPractice @Loja @LojaOffline
 Feature: Loja Offline
 
   Scenario: Validar página de aviso da loja offline
