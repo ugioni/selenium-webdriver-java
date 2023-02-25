@@ -1,5 +1,6 @@
 package e2e.core;
 
+import com.github.javafaker.Faker;
 import io.cucumber.java.Scenario;
 import org.junit.Assert;
 import org.openqa.selenium.*;
@@ -23,6 +24,8 @@ public class Core {
     public static WebDriver driver;
     public static WebDriverWait wait;
     public static JavascriptExecutor jsExec;
+
+    public static Faker faker;
     private Scenario cenario = null;
 
     public Core() {
@@ -34,6 +37,7 @@ public class Core {
             driver = getDriver(getProperties("browser"), headless);
             wait = new WebDriverWait(driver, Duration.ofSeconds(30L));
             jsExec = (JavascriptExecutor) driver;
+            faker = new Faker();
         } catch (Exception e) {
             System.out.println("Não foi possível iniciar o driver " + e.getMessage());
         }
@@ -223,6 +227,10 @@ public class Core {
 
     public static WebDriver getDriver() {
         return driver;
+    }
+
+    public static Faker getDados() {
+        return faker;
     }
 
     public void irParaFrame(int index) {
