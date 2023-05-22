@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 public class Home extends Core {
 
     public String getUrl() {
-        return "https://www.saucedemo.com/";
+        return "http://automationpractice.pl/";
     }
 
     public By getCampoBarraPesquisa() {
@@ -19,17 +19,5 @@ public class Home extends Core {
 
     public By getMensagemOffline() {
         return getByCss("div[class='info-heading']");
-    }
-
-    public By getCampoLogin() {
-        return getById("user-name");
-    }
-
-    public By getCampoSenha() {
-        return getById("password");
-    }
-
-    public By getBotaoLogin() {
-        return getById("login-button");
     }
 }

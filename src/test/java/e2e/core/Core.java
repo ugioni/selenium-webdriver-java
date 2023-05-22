@@ -24,7 +24,6 @@ public class Core {
     public static WebDriver driver;
     public static WebDriverWait wait;
     public static JavascriptExecutor jsExec;
-
     public static Faker faker;
     private Scenario cenario = null;
 
