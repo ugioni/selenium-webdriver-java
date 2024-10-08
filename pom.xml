@@ -22,14 +22,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <junit.version>4.13.2</junit.version>
-        <selenium.version>4.16.1</selenium.version>
+        <selenium.version>4.25.0</selenium.version>
         <selenium.server.version>4.0.0-alpha-2</selenium.server.version>
-        <cucumber-core.version>7.15.0</cucumber-core.version>
+        <cucumber.version>7.20.0</cucumber.version>
         <cucumber-html.version>0.2.7</cucumber-html.version>
-        <cucumber-java.version>7.15.0</cucumber-java.version>
-        <cucumber-junit.version>7.15.0</cucumber-junit.version>
         <cucumber-jvm-deps.version>1.0.6</cucumber-jvm-deps.version>
-        <cucumber-picocontainer.version>7.15.0</cucumber-picocontainer.version>
         <gherkin.version>2.12.2</gherkin.version>
         <gherkin-jvm-deps.version>1.0.3</gherkin-jvm-deps.version>
     </properties>
@@ -58,7 +55,7 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-core</artifactId>
-            <version>${cucumber-core.version}</version>
+            <version>${cucumber.version}</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -68,12 +65,12 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>${cucumber-java.version}</version>
+            <version>${cucumber.version}</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>${cucumber-junit.version}</version>
+            <version>${cucumber.version}</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -83,7 +80,7 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-picocontainer</artifactId>
-            <version>${cucumber-picocontainer.version}</version>
+            <version>${cucumber.version}</version>
         </dependency>
         <dependency>
             <groupId>info.cukes</groupId>
@@ -103,7 +100,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>exec-maven-plugin</artifactId>
-                    <version>3.1.1</version>
+                    <version>3.4.1</version>
                     <executions>
                         <execution>
                             <phase>integration-test</phase>
@@ -127,14 +124,14 @@
                         <dependency>
                             <groupId>io.cucumber</groupId>
                             <artifactId>cucumber-core</artifactId>
-                            <version>${cucumber-core.version}</version>
+                            <version>${cucumber.version}</version>
                         </dependency>
                     </dependencies>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.2.5</version>
+                    <version>3.5.1</version>
                     <configuration>
                         <includes>
                             <include>**/Run.java</include>
@@ -146,7 +143,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.12.1</version>
+                    <version>3.13.0</version>
                     <configuration>
                         <source>11</source>
                         <target>11</target>
@@ -164,7 +161,7 @@
                 <plugin>
                     <groupId>net.masterthought</groupId>
                     <artifactId>maven-cucumber-reporting</artifactId>
-                    <version>5.7.8</version>
+                    <version>5.8.2</version>
                     <executions>
                         <execution>
                             <id>execution</id>
